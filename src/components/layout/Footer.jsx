@@ -5,10 +5,10 @@ export default function Footer({ blok }) {
         <section className="w-full bg-red">
             <p>{text}</p>
 
-            {blok.searchbox && blok.searchbox.map((item) => {
+            {blok.searchbox && blok.searchbox.map((item, index) => {
 
 
-        return <p>{item.minitext}</p>
+        return <p key={index}>{item.minitext}</p>
 
             })}
         </section>
