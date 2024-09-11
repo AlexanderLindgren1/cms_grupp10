@@ -1,4 +1,4 @@
-export default function Teaser({ blok }) {
+export default function Footer({ blok }) {
     return (
         <section className="w-full bg-red">
             <h1>{blok?.headline}</h1>
