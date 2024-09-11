@@ -1,10 +1,17 @@
-import Link from "next/link";
 
- export default function Imagebanner({ blok }) {
-console.log(blok.image.filename);
+import Image from "next/image"; 
 
-return <>
+export default function Imagebanner({ blok }) {
+  console.log(blok.image.filename);
 
-<img src={blok.image.filename} alt="" />
-</>
+  return (
+    <>
+      <Image
+        src={blok.image.filename}
+        alt="Image description"
+        width={800}
+        height={600} 
+      />
+    </>
+  );
 }
