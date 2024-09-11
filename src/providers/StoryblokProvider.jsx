@@ -5,12 +5,12 @@ import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 import Page from "@/components/content-types/Page";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-import Hero from "@/components/nestable/Imagewithtext";
+import Hero from "@/components/nestable/Hero";
 import Imagewithtext from "@/components/nestable/Imagewithtext";
 import Latestproducts from "@/components/nestable/LatestProductslist";
 import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
-
+import Abouthero from "@/components/nestable/abouthero";
 const components = {
   "header": Header,
   "footer": Footer,
@@ -20,6 +20,7 @@ const components = {
   "imagewithtext":Imagewithtext,
   "latestproducts":Latestproducts,
   "searchbar":Searchbar,
+  "abouthero":Abouthero,
 
 }
 

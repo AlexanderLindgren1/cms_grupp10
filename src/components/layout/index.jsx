@@ -9,7 +9,7 @@ export default function Layout({ config, children }) {
     const layout = config.content.layout
     const  header = config.content.layout[0]
     const footer = config.content.layout[1]
-    console.log("layout",layout);
+   
     return (
         <>
             <Header blok ={header}/>
