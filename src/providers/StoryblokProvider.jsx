@@ -10,8 +10,7 @@ import Imagewithtext from "@/components/nestable/Imagewithtext";
 import Latestproducts from "@/components/nestable/LatestProductslist";
 import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
-import abouthero from "@/components/nestable/abouthero";
-
+import Abouthero from "@/components/nestable/abouthero";
 const components = {
   "header": Header,
   "footer": Footer,
@@ -21,7 +20,7 @@ const components = {
   "imagewithtext":Imagewithtext,
   "latestproducts":Latestproducts,
   "searchbar":Searchbar,
-  "abouthero":abouthero,
+  "abouthero":Abouthero,
 
 }
 

@@ -1,11 +1,18 @@
-import Link from "next/link";
 
- export default function abouthero({ blok }) {
-    console.log("about hero", blok);
-    
-    return(
 
-        <p>test</p>
+export default function Abouthero({ blok }) {
+    console.log("about hero", blok.text);
+
+    return (
+        <>
+        <p>--------</p>
+        <p>{blok.text}</p>
+
+            <p> {blok.title.content[0].content[0].text}</p>
+
+            <p>-----------</p>
+        </>
+
     )
 
 }
