@@ -9,16 +9,16 @@ import Link from "next/link";
         <section className="w-full bg-red">
             <p>header</p>
             
-            {blok.links.map(async(linkstory)=>{
+            {blok.links.map((linkstory)=>{
 
        
-                const story = await linkstory.link.story
+                const story =  linkstory?.link?.story
 
             return (
                 
 
-                    <Link key={story.uuid} href={story.slug}>
-                    <p> {story.name}</p>
+                    <Link key={story?._uid} href={story?.slug}>
+                    <p> {story?.name}</p>
                     </Link>
                 
 

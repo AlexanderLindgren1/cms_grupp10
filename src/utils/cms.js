@@ -50,8 +50,8 @@ export class StoryblokCMS {
           "version": "draft"
         }
       );
-      console.log(data)
-      return data?.story;
+      console.log("PRODUCT STORIES", data.stories)
+      return data.stories
     } catch (error) {
       console.log("products ERROR", error);
       return {};
