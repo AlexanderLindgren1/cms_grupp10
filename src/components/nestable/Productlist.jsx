@@ -8,12 +8,15 @@ import Imagewithtext from "./Imagewithtext";
 export default async function Productlist({ blok }) {
     const products = await StoryblokCMS.getProducts();
     console.log("products", products )
-    console.log("blok",blok.products[0]);
+    console.log("blok pl",blok.products.length);
     
     return <div className="products">
- {blok.products && blok.products.map((product)=>{
 
-return <Imagewithtext blok = {product}/>
+ {blok.products && blok.products.map((product, index)=>{
+console.log("in product list",product);
+
+const ProductwithID = {product, index}
+return <Imagewithtext blok = {ProductwithID}/>
 
 })}
 
