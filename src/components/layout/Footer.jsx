@@ -11,7 +11,7 @@ export default function Footer({ blok }) {
             {blok.searchbox && blok.searchbox.map((item, index) => {
 
 
-        return <p >{item.minitext}</p>
+        return <p key={index}>{item.minitext}</p>
 
             })}
         </section>
