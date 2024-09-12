@@ -8,18 +8,22 @@ export default function Imagewithtext({ blok }) {
 
     console.log("PRODUCT", product)
 
-    return null;
+
 
     const productContent = product?.content;
     const productUrl = blok?.full_slug;
     // console.log("Product contet", productContent)
+  console.log("productContentww",productContent?.title?.content[0].content[0].text ?? "The text are missing");
   
     return <>
 
 
         <Link href={productUrl}>
-            <p>{productContent?.title}</p>
-            <img src={productContent?.image?.filename} alt="" />
+        {/* <p>{productContent.title.content[0].content[0].text}</p> */}
+        <img src={productContent?.image?.filename } alt="No image from this product" />
+        <p>{productContent?.title?.content[0].content[0].text ?? "The text are missing"}</p>
+        <p>price: {productContent?.price ? productContent?.price : "not added price"}</p>
+
         </Link>
 
     </>
