@@ -1,8 +1,7 @@
 
 
 export default function Abouthero({ blok }) {
-    console.log("about hero", blok.text);
-
+    
     return (
         <>
         <p>--------</p>

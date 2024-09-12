@@ -3,7 +3,7 @@ import Link from "next/link";
  export default function Header({ blok }) {
  
     
-    console.log("in header",blok.searchbox[0].searchbox);
+    // console.log("in header",blok.searchbox[0].searchbox);
     
     return (
         <section className="w-full bg-red">
@@ -28,7 +28,7 @@ import Link from "next/link";
             
             }
 
-            <input type="text" placeholder={blok.searchbox[0].searchbox} />
+            <input type="text" placeholder={blok?.searchbox[0]?.searchbox} />
         </section>
     )
 }
