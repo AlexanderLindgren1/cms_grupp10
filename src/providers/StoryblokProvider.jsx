@@ -12,6 +12,7 @@ import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
 import Abouthero from "@/components/nestable/abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
+import Image from "@/components/nestable/Image";
 import Productlist from "@/components/nestable/Productlist";
 const components = {
   "header": Header,
@@ -24,6 +25,7 @@ const components = {
   "searchbar":Searchbar,
   "abouthero":Abouthero,
   "productpage": ProductPage,
+  "image": Image,
   "productlist": Productlist
 
 }

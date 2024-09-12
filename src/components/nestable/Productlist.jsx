@@ -1,7 +1,4 @@
-
-
-import { StoryblokCMS } from "@/utils/cms";
-import Imagewithtext from "./Imagewithtext";
+import Link from "next/link";
 
 
 export default async function Productlist({ blok }) {

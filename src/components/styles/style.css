@@ -1,0 +1,114 @@
+/* Grundläggande återställningar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header-styling */
+.header {
+  
+   
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+nav {
+    display: flex;
+     align-items: center;
+     justify-content:flex-start;
+     margin-left: 50px;
+     
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+  
+}
+
+.nav-links {
+    list-style: none;
+   margin:10px 30px;
+ 
+    font-size: 1em;
+}
+
+
+
+
+.nav-links:hover {
+    text-decoration: underline;
+}
+
+.search-form {
+    display: flex;
+    color: black;
+   align-items: center;
+   margin-left: 10px;
+}
+
+.search-form img{
+   width: 30px;
+   height: 25px;
+}
+.search-form input[type="text"] {
+    padding: 5px;
+
+    border: none;
+
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin: 30px 70px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text {
+    font-size: 1.25rem;
+    color: lightgray;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    font-size: 1rem;
+    padding: 10px 50px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: black;
+    color: white;
+  }
+  .hero-image-container {
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    margin-top: 2rem;
+  }
+  
+  .hero-image {
+    /* max-width: 80%;
+    height: auto; */
+  }
+  .banner-image{
+    margin: 50px 0px;
+width: 100%;
+height: 200px;
+  }

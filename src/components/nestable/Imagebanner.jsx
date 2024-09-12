@@ -10,7 +10,7 @@ export default function Imagebanner({ blok }) {
         src={blok.image.filename}
         alt="Image description"
         width={800}
-        height={600} 
+        height={600} className="banner-image"
       />
     </>
   );
