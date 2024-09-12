@@ -4,7 +4,8 @@ import Link from "next/link";
 
 
 return <>
-
-<img src={blok.image.filename} alt="" />
+ <div className="hero-image-container">
+<img src={blok.image.filename} alt=""  className=".hero-image"/>
+</div>
 </>
 }

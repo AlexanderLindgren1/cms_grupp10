@@ -1,39 +1,39 @@
-// export default function Footer({ blok }) {
-
-import Link from "next/link";
-
-//     const text = blok.title.content[0].content[0].text
-//     return (
-//         <section className="w-full bg-red">
-//             <p>{text}</p>
-
-//             {blok.searchbox && blok.searchbox.map((item, index) => {
+export default function Footer({ blok }) {
 
 
-//         return <p >{item.minitext}</p>
 
-//             })}
-//         </section>
-//     )
-// }
+    const text = blok.title.content[0].content[0].text
+    return (
+        <section className="w-full bg-red">
+            <p>{text}</p>
+
+            {blok.searchbox && blok.searchbox.map((item, index) => {
+
+
+        return <p >{item.minitext}</p>
+
+            })}
+        </section>
+    )
+}
 
 // github
-export default function Footer({ links }) {
-    if (!Array.isArray(links)) {
-      console.error('Expected links to be an array, but got:', links);
-      return null; // or handle the error gracefully
-    }
+// export default function Footer({ links }) {
+//     if (!Array.isArray(links)) {
+//       // console.error('Expected links to be an array, but got:', links);
+//       return null; // or handle the error gracefully
+//     }
   
-    return (
-      <footer>
-        <ul>
-          {blok.searchbox && blok.searchbox.map((link, index) => (
-            <li key={link.id || index}>
-              <Link href={link.url}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </footer>
-    );
-  }
+//     return (
+//       <footer>
+//         <ul>
+//           {blok.searchbox && blok.searchbox.map((link, index) => (
+//             <li key={link.id || index}>
+//               <Link href={link.url}>{link.name}</Link>
+//             </li>
+//           ))}
+//         </ul>
+//       </footer>
+//     );
+//   }
   
