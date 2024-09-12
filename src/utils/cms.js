@@ -41,6 +41,23 @@ export class StoryblokCMS {
     }
   }
 
+  static async getProducts() {
+    try {
+      const { data } = await this.sbGet(
+        "cdn/stories",
+        {
+          "starts_with": "products/",
+          "version": "draft"
+        }
+      );
+      console.log("PRODUCT STORIES", data.stories)
+      return data.stories
+    } catch (error) {
+      console.log("products ERROR", error);
+      return {};
+    }
+  }
+
   static async generateMetaFromStory(slug) {
     //Read nextjs metadata docs
     //1. Add Seo fields to Page component in storyblok (in own tab)

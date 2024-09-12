@@ -1,0 +1,5 @@
+.button {
+    @apply p-2 text-white rounded; /* Tailwind utility classes */
+    background-color: var(--button-bg-color);
+  }
+  

@@ -10,30 +10,9 @@ export default function Footer({ blok }) {
             {blok.searchbox && blok.searchbox.map((item, index) => {
 
 
-        return <p >{item.minitext}</p>
+        return <p key={index}>{item.minitext}</p>
 
             })}
         </section>
     )
 }
-
-// github
-// export default function Footer({ links }) {
-//     if (!Array.isArray(links)) {
-//       // console.error('Expected links to be an array, but got:', links);
-//       return null; // or handle the error gracefully
-//     }
-  
-//     return (
-//       <footer>
-//         <ul>
-//           {blok.searchbox && blok.searchbox.map((link, index) => (
-//             <li key={link.id || index}>
-//               <Link href={link.url}>{link.name}</Link>
-//             </li>
-//           ))}
-//         </ul>
-//       </footer>
-//     );
-//   }
-  
