@@ -5,8 +5,9 @@
 
     return(
         <>
-        <p> {blok.title.content[0].content[0].text}</p>
-        <p>{blok.text}</p>
+        <div className="hero">
+        <p className="hero-title"> {blok.title.content[0].content[0].text}</p>
+        <p className="hero-text">{blok.text}</p>
 
 
     
@@ -14,12 +15,12 @@
 {
      blok.button.map((button)=>{
        return(
-           <button>{button.text}</button> 
+           <button className="hero-button">{button.text}</button> 
        )
    
     })
 }
-        <p>---------------------------</p>
+       </div>
         </>
 
 
