@@ -1,60 +1,60 @@
-// import Link from "next/link";
+import Link from "next/link";
 
-//  export default function Header({ blok }) {
+ export default function Header({ blok }) {
  
     
-//     console.log("in header",blok.searchbox[0].searchbox);
+    console.log("in header",blok.searchbox[0].searchbox);
     
-//     return (
-//         <section className="w-full bg-red">
-//             <p>header</p>
+    return (
+        <section className="w-full bg-red">
+            <p>header</p>
             
-//             {blok.links.map(async(linkstory)=>{
+            {blok.links.map(async(linkstory)=>{
 
        
-//                 const story = await linkstory.link.story
+                const story = await linkstory.link.story
 
-//             return (
+            return (
                 
 
-//                     <Link key={story.uuid} href={story.slug}>
-//                     <p> {story.name}</p>
-//                     </Link>
+                    <Link key={story.uuid} href={story.slug}>
+                    <p> {story.name}</p>
+                    </Link>
                 
 
-//             )
-//             })
+            )
+            })
             
             
-//             }
+            }
 
-//             <input type="text" placeholder={blok.searchbox[0].searchbox} />
-//         </section>
-//     )
-// }
+            <input type="text" placeholder={blok.searchbox[0].searchbox} />
+        </section>
+    )
+}
 
 
 // chatgpts
-import Link from "next/link";
+// import Link from "next/link";
 
-export default function Header({ blok }) {
-  console.log("in header", blok.searchbox[0].searchbox);
+// export default function Header({ blok }) {
+//   console.log("in header", blok.searchbox[0].searchbox);
 
-  return (
-    <section className="w-full bg-red">
-      <p>header</p>
+//   return (
+//     <section className="w-full bg-red">
+//       <p>header</p>
 
-      {blok.links.map((linkstory) => {
-        const story = linkstory.link.story; // Remove the async/await usage
+//       {blok.links.map((linkstory) => {
+//         const story = linkstory.link.story; // Remove the async/await usage
 
-        return (
-          <Link key={story.uuid} href={`/${story.slug}`}>
-            <p>{story.name}</p>
-          </Link>
-        );
-      })}
+//         return (
+//           <Link key={story.uuid} href={`/${story.slug}`}>
+//             <p>{story.name}</p>
+//           </Link>
+//         );
+//       })}
 
-      <input type="text" placeholder={blok.searchbox[0].searchbox} />
-    </section>
-  );
-}
+//       <input type="text" placeholder={blok.searchbox[0].searchbox} />
+//     </section>
+//   );
+// }
