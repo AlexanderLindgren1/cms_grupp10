@@ -1,42 +1,49 @@
 import Link from "next/link";
 import "../styles/style.css";
+import Image from "next/image";
 export default function Imagewithtext({ blok }) {
+  const product = blok;
 
+  console.log("PRODUCT", product);
 
-    
-    const product = blok
+  const productContent = product?.content;
+  const productUrl = blok?.full_slug;
 
-    console.log("PRODUCT", product)
+  console.log(
+    "productContentww",
+    productContent?.title?.content[0].content[0].text ?? "The text are missing"
+  );
 
-
-
-    const productContent = product?.content;
-    const productUrl = blok?.full_slug;
-
-  console.log("productContentww",productContent?.title?.content[0].content[0].text ?? "The text are missing");
-  
-    return <>
-<div className="
+  return (
+    <>
+      <div
+        className="
 image-with-text">
-
-
-
         <Link href={productUrl}>
-        {/* <p>{productContent.title.content[0].content[0].text}</p> */}
-        <img src={productContent?.image?.filename } alt="No image from this product" />
-        <p>{productContent?.title?.content[0].content[0].text ?? "The text are missing"}</p>
-        <p>price: {productContent?.price ? productContent?.price : "not added price"}</p>
+          {/* <p>{productContent.title.content[0].content[0].text}</p> */}
+          <img
+            src={productContent?.image?.filename}
+            alt="No image from this product"
+          />
+          <Image
+            img
+            src={productContent?.image?.filename}
+            alt="No image from this product"
+            width={768}
+            height={768} 
+            layout="responsive" 
+          />
 
+          <p>
+            {productContent?.title?.content[0].content[0].text ??
+              "The text are missing"}
+          </p>
+          <p>
+            price:{" "}
+            {productContent?.price ? productContent?.price : "not added price"}
+          </p>
         </Link>
-</div>
+      </div>
     </>
-
-
-
-
-
-
-
-
-
+  );
 }

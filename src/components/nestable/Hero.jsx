@@ -13,9 +13,9 @@
     
 
 {
-     blok.button.map((button)=>{
+     blok.button.map((button, index)=>{
        return(
-           <button className="hero-button">{button.text}</button> 
+           <button className="hero-button" key={index}>{button.text}</button> 
        )
    
     })
