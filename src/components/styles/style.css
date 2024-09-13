@@ -117,21 +117,186 @@ height: 200px;
 
 
 
+.footer {
+  background-color: #333;
+  color: #fff;
+ 
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+
+  
+  align-items: center;
+  justify-content: space-around;
+
+
+  margin: 20px 0;
+}
+.footer-content{
+
+
+ padding-top: 30px ;
+  
+  border-top:2px solid black;
+}
+
+
+.footer-content h2 {
+  
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+
+
+.image-with-text {
+  padding: 10px;
+  text-align: center;
+}
+
+.image-with-text img {
+  max-width: 100%;
+  border-bottom: 1px solid #958f8f;
+  height: 200px;
+}
+
+
+
+.image-with-text p {
+  color: #666;
+}
 
 
 
 
 
 
+.about-container {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  /* background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  
+}
+
+.about-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.about-text {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-text p {
+  margin-bottom: 10px;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 
 
+/* product.css */
+.product-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+.product-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.product-image {
+ width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
 
+.product-text {
+  flex: 1;
+}
 
+.product-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
 
+.product-price {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  
+}
 
+.product-description {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #555;
+}
 
+.product-buttons, .product-sizes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
 
-  /* Från A helt okej andra när som helst obs ta bort inför inlämning */
+.color-button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.size-button {
+  padding: 10px 20px;
+  border: none;
+border: 1px solid black;
+  color: #090909;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.size-button:hover {
+  background-color: #555;
+}
