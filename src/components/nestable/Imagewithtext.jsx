@@ -21,10 +21,7 @@ export default function Imagewithtext({ blok }) {
 image-with-text">
         <Link href={productUrl}>
           {/* <p>{productContent.title.content[0].content[0].text}</p> */}
-          <img
-            src={productContent?.image?.filename}
-            alt="No image from this product"
-          />
+       
           <Image
             img
             src={productContent?.image?.filename}
