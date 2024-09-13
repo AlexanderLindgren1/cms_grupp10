@@ -101,4 +101,26 @@ export class StoryblokCMS {
       console.log("PATHS ERROR", error);
     }
   }
+
+
+
+
+  static async asyncfetchProductsByUID (_uids) {
+    try {
+      const response = await Storyblok.get('cdn/stories', {
+        filter_query: {
+          _uid: {
+            in: _uids.join(','), // Join UIDs with commas for filtering
+          },
+        },
+      });
+
+      const products = response.data.stories; // Array of matching products
+      return products;
+    } catch (error) {
+      console.error('Error fetching products:', error);
+      return [];
+    }
+  };
+
 }

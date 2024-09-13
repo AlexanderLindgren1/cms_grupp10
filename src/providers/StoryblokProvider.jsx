@@ -24,7 +24,8 @@ const components = {
   "abouthero":Abouthero,
   "productpage": ProductPage,
   "image": Image,
-  "latestproductslist": LatestProductsList
+  "latestproductslist": LatestProductsList,
+  
 }
 
 storyblokInit({
