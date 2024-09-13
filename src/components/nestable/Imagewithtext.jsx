@@ -4,14 +4,10 @@ import Image from "next/image";
 export default function Imagewithtext({ blok }) {
   const product = blok;
 
-  console.log("eeer", product);
-
-  if(product.name == "Products landing") return null
-console.log(product.name);
+  if (product.name == "Products landing") return null;
 
   const productContent = product?.content;
   const productUrl = blok?.full_slug;
-
 
   return (
     <>
