@@ -1,16 +1,15 @@
+import Link from "next/link"
 
-export default async function LastestProductsList({ blok }) {
-    const products = await StoryblokCMS.getProducts();
-    if (!products) return null;
-    console.log("you are in products list ", products);
 
+export default async function LatestProductsList({ blok }) {
+    console.log("theend",blok.latestpro ,"---------");
 
     return <div className="products">
 
-        {products?.map((product, index) => {
-    
-        })}
+    {/* <Link href={}></Link> */}
 
 
     </div>
+
+
 }

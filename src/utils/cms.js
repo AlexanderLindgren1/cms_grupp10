@@ -102,25 +102,21 @@ export class StoryblokCMS {
     }
   }
 
+//this underservice 
+static async fetchProductsFromFolder(folderSlug) {
+  try {
+    const response = await storyblokClient.get('cdn/stories', {
+      starts_with: folderSlug,
+      sort_by: 'published_at:desc', 
+      version: 'draft', 
+    });
+    return response.data.stories;
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    return [];
+  }
+}
 
-
-
-  static async asyncfetchProductsByUID (_uids) {
-    try {
-      const response = await Storyblok.get('cdn/stories', {
-        filter_query: {
-          _uid: {
-            in: _uids.join(','), // Join UIDs with commas for filtering
-          },
-        },
-      });
-
-      const products = response.data.stories; // Array of matching products
-      return products;
-    } catch (error) {
-      console.error('Error fetching products:', error);
-      return [];
-    }
-  };
+  
 
 }

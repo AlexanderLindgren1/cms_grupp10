@@ -13,7 +13,7 @@ import Abouthero from "@/components/nestable/abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
 import Image from "@/components/nestable/Image";
 import Productlist from "@/components/nestable/Productlist";
-import LastestProductsList from "@/components/nestable/LastestProductsList";
+// import LatestProductsList from "@/components/nestable/LastestProductsList";
 import Lates from "@/components/nestable/Lates";
 
 
@@ -29,7 +29,7 @@ const components = {
   "productpage": ProductPage,
   "image": Image,
   "productlist": Productlist,
-  "lastestproductslist": LastestProductsList,
+  // "lastestproductslist": LatestProductsList,
   "lates": Lates
 };
 
