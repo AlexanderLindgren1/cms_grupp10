@@ -41,6 +41,8 @@ export class StoryblokCMS {
     }
   }
 
+
+
   static async getProducts() {
     try {
       const { data } = await this.sbGet(
