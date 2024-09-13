@@ -1,21 +1,17 @@
-import  from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function LatestProductsList({ blok }) {
+    console.log("hardcoder", blok.latestpro[0].image.filename);
+    
   <div>
-    <Link href={"/products/product1"}>
-      <p>product1</p>
-      <Image/>
-    </Link>
+    {blok?.latestpro?.map((lp,index)=>{
 
-    <Link href={"/products/product2"}>
-      <p>product1</p>
-    </Link>
+    <Link key={index}  ><Image src={lp?.image?.filename} width={400} height={400} alt="latest Image "/></Link>
+    })}
+  
 
-    <Link href={"/products/product3"}>
-      <p>product3</p>
 
-    </Link>
   </div>;
 
   return <p>hej</p>;
