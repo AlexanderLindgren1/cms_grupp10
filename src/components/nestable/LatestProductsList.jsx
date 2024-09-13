@@ -1,18 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function xx(data){
+console.log("in xx", data);
+
+}
 export default function LatestProductsList({ blok }) {
-    console.log("hardcoder", blok.latestpro[0].image.filename);
-    
-  <div>
-    {blok?.latestpro?.map((lp,index)=>{
+  console.log("hardcoder", blok.latestpro[0]);
 
-    <Link key={index}  ><Image src={lp?.image?.filename} width={400} height={400} alt="latest Image "/></Link>
-    })}
-  
-
-
-  </div>;
-
-  return <p>hej</p>;
+  return (
+    <div>
+      <p>test</p>
+      {blok?.latestpro?.map((lp, index) => (
+        <Link
+          key={index}
+          href={`${lp.text}`}>
+          <img
+            src={lp?.image?.filename || "/default-image.jpg"}
+            width={400}
+            height={400}
+            alt="latest Image"
+          />
+        </Link>
+      ))}
+    </div>
+  );
 }
