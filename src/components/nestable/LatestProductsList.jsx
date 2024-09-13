@@ -1,25 +1,22 @@
-import { useState, useEffect } from 'react';
+import  from "next/image";
+import Link from "next/link";
 
 export default function LatestProductsList({ blok }) {
-  const [product, setProduct] = useState([]);
+  <div>
+    <Link href={"/products/product1"}>
+      <p>product1</p>
+      <Image/>
+    </Link>
 
-  useEffect(() => {
-    const storySlug = 'products/product1';
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch(
-          `https://api.storyblok.com/v2/cdn/stories/${storySlug}?version=published&token=${process.env.NEXT_PUBLIC_PREVIEW_STORYBLOK_TOKEN}`
-        );
-        const data = await response.json();
-        setProduct(data);
-      } catch (error) {
-        console.error('Fel vid hämtning från Storyblok:', error);
-      }
-    };
+    <Link href={"/products/product2"}>
+      <p>product1</p>
+    </Link>
 
-    fetchProducts();
-  }, []); 
+    <Link href={"/products/product3"}>
+      <p>product3</p>
 
-  // fungerar
+    </Link>
+  </div>;
+
   return <p>hej</p>;
 }
