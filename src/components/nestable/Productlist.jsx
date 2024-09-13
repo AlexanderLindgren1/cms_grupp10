@@ -1,9 +1,8 @@
 import { StoryblokCMS } from "@/utils/cms";
-import Link from "next/link";
 import Imagewithtext from "./Imagewithtext";
 
 
-export default async function Productlist({ blok }) {
+export default async function LPL({ blok }) {
     const products = await StoryblokCMS.getProducts();
     if (!products) return null;
     console.log("you are in products list ", products);

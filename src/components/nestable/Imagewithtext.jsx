@@ -36,22 +36,6 @@ image-with-text">
 
 
 
-return (
-    
-<>
-<p> </p>
-<p>{blok[0].text}</p>
-
-
-
-
-
-
-</>
-    
-)
-
-
 
 
 

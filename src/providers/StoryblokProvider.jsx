@@ -7,38 +7,39 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/nestable/Hero";
 import Imagewithtext from "@/components/nestable/Imagewithtext";
-import Latestproducts from "@/components/nestable/LatestProductslist";
 import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
 import Abouthero from "@/components/nestable/abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
 import Image from "@/components/nestable/Image";
 import Productlist from "@/components/nestable/Productlist";
+// import LatestProductsList from "@/components/nestable/LastestProductsList";
+import Lates from "@/components/nestable/Lates";
+
+
 const components = {
   "header": Header,
   "footer": Footer,
   "page": Page,
-  "hero":Hero,
-  "imagebanner":Imagebanner,
-  "imagewithtext":Imagewithtext,
-  "latestproducts":Latestproducts,
-  "searchbar":Searchbar,
-  "abouthero":Abouthero,
+  "hero": Hero,
+  "imagebanner": Imagebanner,
+  "imagewithtext": Imagewithtext,
+  "searchbar": Searchbar,
+  "abouthero": Abouthero,
   "productpage": ProductPage,
   "image": Image,
-  "productlist": Productlist
-
-}
+  "productlist": Productlist,
+  // "lastestproductslist": LatestProductsList,
+  "lates": Lates
+};
 
 storyblokInit({
   accessToken: StoryblokCMS.TOKEN,
 
   use: [apiPlugin],
-  components
+  components,
 });
 
 export default function StoryblokProvider({ children }) {
-  return (
-    children
-  );
+  return children;
 }
