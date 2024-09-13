@@ -1,8 +1,5 @@
-import { StoryblokCMS } from "@/utils/cms";
-import Imagewithtext from "./Imagewithtext";
 
-
-export default async function LPL({ blok }) {
+export default async function LastestProductsList({ blok }) {
     const products = await StoryblokCMS.getProducts();
     if (!products) return null;
     console.log("you are in products list ", products);
@@ -11,8 +8,7 @@ export default async function LPL({ blok }) {
     return <div className="products">
 
         {products?.map((product, index) => {
-            return <Imagewithtext blok={product} key={index}/>
-
+    
         })}
 
 

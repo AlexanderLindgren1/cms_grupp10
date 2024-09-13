@@ -12,31 +12,34 @@ import Imagebanner from "@/components/nestable/Imagebanner";
 import Abouthero from "@/components/nestable/abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
 import Image from "@/components/nestable/Image";
-import LatestProductsList from "@/components/nestable/LatestProductslist";
+import Productlist from "@/components/nestable/Productlist";
+import LastestProductsList from "@/components/nestable/LastestProductsList";
+import Lates from "@/components/nestable/Lates";
+
+
 const components = {
   "header": Header,
   "footer": Footer,
   "page": Page,
-  "hero":Hero,
-  "imagebanner":Imagebanner,
-  "imagewithtext":Imagewithtext,
-  "searchbar":Searchbar,
-  "abouthero":Abouthero,
+  "hero": Hero,
+  "imagebanner": Imagebanner,
+  "imagewithtext": Imagewithtext,
+  "searchbar": Searchbar,
+  "abouthero": Abouthero,
   "productpage": ProductPage,
   "image": Image,
-  "latestproductslist": LatestProductsList,
-  
-}
+  "productlist": Productlist,
+  "lastestproductslist": LastestProductsList,
+  "lates": Lates
+};
 
 storyblokInit({
   accessToken: StoryblokCMS.TOKEN,
 
   use: [apiPlugin],
-  components
+  components,
 });
 
 export default function StoryblokProvider({ children }) {
-  return (
-    children
-  );
+  return children;
 }
