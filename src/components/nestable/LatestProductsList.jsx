@@ -10,7 +10,6 @@ export default function LatestProductsList({ blok }) {
 
   return (
     <div>
-      <p>test</p>
       {blok?.latestpro?.map((lp, index) => (
         <Link
           key={index}

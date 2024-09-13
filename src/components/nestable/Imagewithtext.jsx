@@ -4,15 +4,14 @@ import Image from "next/image";
 export default function Imagewithtext({ blok }) {
   const product = blok;
 
-  console.log("PRODUCT", product);
+  console.log("eeer", product);
+
+  if(product.name == "Products landing") return null
+console.log(product.name);
 
   const productContent = product?.content;
   const productUrl = blok?.full_slug;
 
-  console.log(
-    "productContentww",
-    productContent?.title?.content[0].content[0].text ?? "The text are missing"
-  );
 
   return (
     <>
@@ -21,14 +20,14 @@ export default function Imagewithtext({ blok }) {
 image-with-text">
         <Link href={productUrl}>
           {/* <p>{productContent.title.content[0].content[0].text}</p> */}
-       
+
           <Image
             img
             src={productContent?.image?.filename}
             alt="No image from this product"
             width={768}
-            height={768} 
-            layout="responsive" 
+            height={768}
+            layout="responsive"
           />
 
           <p>
