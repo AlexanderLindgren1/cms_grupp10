@@ -103,19 +103,6 @@ export class StoryblokCMS {
   }
 
 //this underservice 
-static async fetchProductsFromFolder(folderSlug) {
-  try {
-    const response = await storyblokClient.get('cdn/stories', {
-      starts_with: folderSlug,
-      sort_by: 'published_at:desc', 
-      version: 'draft', 
-    });
-    return response.data.stories;
-  } catch (error) {
-    console.error('Error fetching products:', error);
-    return [];
-  }
-}
 
   
 
