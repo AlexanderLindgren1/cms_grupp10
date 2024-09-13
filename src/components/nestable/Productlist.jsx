@@ -11,7 +11,7 @@ export default async function LPL({ blok }) {
     return <div className="products">
 
         {products?.map((product, index) => {
-            return <Imagewithtext blok={product} key={index}/>
+            return <Imagewithtext  blok={product} key={index}/>
 
         })}
 

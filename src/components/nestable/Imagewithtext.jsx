@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import "../styles/style.css";
 export default function Imagewithtext({ blok }) {
 
 
@@ -12,10 +12,13 @@ export default function Imagewithtext({ blok }) {
 
     const productContent = product?.content;
     const productUrl = blok?.full_slug;
-    // console.log("Product contet", productContent)
+
   console.log("productContentww",productContent?.title?.content[0].content[0].text ?? "The text are missing");
   
     return <>
+<div className="
+image-with-text">
+
 
 
         <Link href={productUrl}>
@@ -25,7 +28,7 @@ export default function Imagewithtext({ blok }) {
         <p>price: {productContent?.price ? productContent?.price : "not added price"}</p>
 
         </Link>
-
+</div>
     </>
 
 
