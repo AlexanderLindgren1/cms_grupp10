@@ -12,7 +12,6 @@ import Imagebanner from "@/components/nestable/Imagebanner";
 import ProductPage from "@/components/content-types/ProductPage";
 import Productlist from "@/components/nestable/Productlist";
 import LatestProductsList from "@/components/nestable/LatestProductsList";
-import Abouthero from "@/components/nestable/abouthero";
 
 
 
@@ -27,7 +26,6 @@ const components = {
   "productpage": ProductPage,
   "productlist": Productlist,
   "lastestproductslist": LatestProductsList,
-  "abouthero":Abouthero
 
 };
 
