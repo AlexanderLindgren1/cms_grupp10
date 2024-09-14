@@ -1,6 +1,8 @@
 import "../styles/style.css";
 import Image from "next/image";
 export default function ProductPage({ blok }) {
+
+  
   return (
     <>
       <div className="product-page">

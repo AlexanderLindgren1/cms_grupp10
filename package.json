@@ -2,6 +2,7 @@
   "name": "webb23-storyblok-nextjs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,9 +14,12 @@
     "next": "^14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "storyblok-rich-text-react-renderer": "^2.9.2"
+    "sitemap": "^8.0.0",
+    "storyblok-rich-text-react-renderer": "^2.9.2",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^5.0.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
