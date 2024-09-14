@@ -9,10 +9,11 @@ export default function Header({ blok }) {
     <section className="header">
       <nav>
         <p className="logo">Ecommerce</p>
-        {" "}
+ 
         {blok.links.map((linkstory) => {
           const story = linkstory?.link?.story;
           //         const story = linkstory.link.story; // Remove the async/await usage
+console.log("storyxx",story);
 
           return (
             <Link key={story.uuid} href={`/${story.slug}`}>
