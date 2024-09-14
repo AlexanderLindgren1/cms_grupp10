@@ -9,7 +9,7 @@ import Hero from "@/components/nestable/Hero";
 import Imagewithtext from "@/components/nestable/Imagewithtext";
 import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
-import Abouthero from "@/components/nestable/abouthero";
+import Abouthero from "@/components/nestable/Abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
 // import Image from "@/components/nestable/Image";
 import Productlist from "@/components/nestable/Productlist";
