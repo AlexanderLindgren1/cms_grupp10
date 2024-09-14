@@ -16,7 +16,7 @@ import Productlist from "@/components/nestable/Productlist";
 import LatestProductsList from "@/components/nestable/LatestProductsList";
 // import Lates from "@/components/nestable/Lates";
 
-
+// hej testing
 const components = {
   "header": Header,
   "footer": Footer,
