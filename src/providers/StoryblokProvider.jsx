@@ -9,14 +9,13 @@ import Hero from "@/components/nestable/Hero";
 import Imagewithtext from "@/components/nestable/Imagewithtext";
 import Searchbar from "@/components/nestable/Searchbar";
 import Imagebanner from "@/components/nestable/Imagebanner";
-import Abouthero from "@/components/nestable/Abouthero";
 import ProductPage from "@/components/content-types/ProductPage";
-// import Image from "@/components/nestable/Image";
 import Productlist from "@/components/nestable/Productlist";
 import LatestProductsList from "@/components/nestable/LatestProductsList";
-// import Lates from "@/components/nestable/Lates";
+import Abouthero from "@/components/nestable/abouthero";
 
-// hej testing
+
+
 const components = {
   "header": Header,
   "footer": Footer,
@@ -25,12 +24,11 @@ const components = {
   "imagebanner": Imagebanner,
   "imagewithtext": Imagewithtext,
   "searchbar": Searchbar,
-  "abouthero": Abouthero,
   "productpage": ProductPage,
-  // "image": Image,
   "productlist": Productlist,
   "lastestproductslist": LatestProductsList,
-  // "lates": Lates
+  "abouthero":Abouthero
+
 };
 
 storyblokInit({
