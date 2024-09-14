@@ -24,8 +24,8 @@ export default function Hero({ blok }) {
 
         {blok.button.map((button, index) => {
           return (
-            <Link href={button.link.cached_url}>
-              <button className="hero-button" key={index}>
+            <Link href={button.link.cached_url }  key={index}>
+              <button className="hero-button">
                 {button.text}
               </button>
             </Link>
