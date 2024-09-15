@@ -12,7 +12,7 @@ export async function generateSitemap() {
     priority: 0.8,
   }));
 
-  const stream = new SitemapStream({ hostname: 'https://yourwebsite.com' });
+  const stream = new SitemapStream({ hostname: 'https://cms-grupp10.vercel.app/' });
 
   // Create a stream with URLs to include in the sitemap
   return streamToPromise(Readable.from(links).pipe(stream)).then(data => data.toString());
